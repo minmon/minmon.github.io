@@ -1,6 +1,6 @@
 @media screen and (max-width: 600px)
 {
-	li.li,.dropdown.hover,.dropdown.content{width: 100%;float: none;}
+	li.li,li ul,.dropdown.hover,.dropdown.content{width: 100%;float: none;}
 }
 .btn,a,span{font-size: 0.85em;}
 h1,h2,h3,h4,h5,h6{font-weight: 400;}
