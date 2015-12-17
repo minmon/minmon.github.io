@@ -1,0 +1,166 @@
+@import url("swifter/margin.css");
+@import url("swifter/border.css");
+@import url("swifter/padding.css");
+@import url("swifter/contents.css");
+@import url("swifter/layouts.css");
+@import url("swifter/pageresize.css");
+@import url("swifter/normalize.css");
+
+/*	Swifter version 0.1.0	*/
+
+/*	Remove the default browser settings for all elements. */
+
+*{margin: 0;padding: 0;box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;font-family: san-serif;}
+
+/*	Set the maximum body width to 100% and minimum body height to 100% */
+
+body{max-width: 100%;min-height: 100%;}
+
+/*	Block display for fluid container.Current "Swifter version 0.1.0" 
+	only support for fluid container.Hack clearfix.Rounded by block 
+	display for manipulating and controlling. */
+
+.container:before,.container:after{
+	display: block !important;
+	content: "" !important;
+	clear: both !important;
+}
+
+/*	display row and column */
+
+.col{float: left !important;}
+
+/*	Create the row for manipulate the colums. */
+
+.row{display: table !important;width: 100%;}
+
+/* Example for testing */
+
+.container-example:before,.container-example:after{
+	display: block !important;
+	content: "" !important;
+	clear: both !important;
+}
+
+.row-example{
+	float: left;
+	clear: both;
+	width: 90%;
+	height: auto;
+	margin: 0 5% 0 5%;
+	background-color: #ccc;
+}
+
+/*	End for testing */
+
+/* Create gutter. */
+
+.col+.col{margin-left: 0.00001%;}
+
+/* 12 colum grid system for small state */
+
+.col.sm1{width: 8.33333%;}
+.col.sm2{width: 16.66666%;}
+.col.sm3{width: 24.99999%;}
+.col.sm4{width: 33.33333%;}
+.col.sm5{width: 41.66666%;}
+.col.sm6{width: 49.99999%;}
+.col.sm7{width: 58.33333%;}
+.col.sm8{width: 66.66666%;}
+.col.sm9{width: 74.99999%;}
+.col.sm10{width: 83.33333%;}
+.col.sm11{width: 91.66666%;}
+.col.sm12{width: 99.99999%;}
+
+/*	Swifter for medium screen (601px) */
+
+@media only screen and (min-width: 601px)
+{
+
+/* 12 colum grid system for medium state */
+
+.col.md1{width: 8.33333%;}
+.col.md2{width: 16.66666%;}
+.col.md3{width: 25%;}
+.col.md4{width: 33.33333%;}
+.col.md5{width: 41.66666%;}
+.col.md6{width: 50%;}
+.col.md7{width: 58.33333%;}
+.col.md8{width: 66.66666%;}
+.col.md9{width: 75%;}
+.col.md10{width: 83.33333%;}
+.col.md11{width: 91.66666%;}
+.col.md12{width: 99.99999%;}	
+
+}
+
+/*	Swifter for large screen (993px) */
+
+@media only screen and (min-width: 993px)
+{
+
+/* 12 colum grid system for large state */
+
+.col.lg1{width: 8.33333%;}
+.col.lg2{width: 16.66666%;}
+.col.lg3{width: 25%;}
+.col.lg4{width: 33.33333%;}
+.col.lg5{width: 41.66666%;}
+.col.lg6{width: 50%;}
+.col.lg7{width: 58.33333%;}
+.col.lg8{width: 66.66666%;}
+.col.lg9{width: 75%;}
+.col.lg10{width: 83.33333%;}
+.col.lg11{width: 91.66666%;}
+.col.lg12{width: 99.99999%;}	
+
+}
+
+/*	Text Align */
+
+[align-center]{text-align: center;}
+[align-justify]{text-align: justify;}
+[align-left]{text-align: left;}
+[align-right]{text-align: right;}
+
+/*	Papers */
+
+.paper{border:1px solid #ccc}
+.paper2{box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important}
+.paper4{box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important}
+.paper8{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important}
+.paper12{box-shadow:0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19) !important}
+.paper16{box-shadow:0 16px 24px 0 rgba(0,0,0,0.22),0 25px 55px 0 rgba(0,0,0,0.21) !important}
+.paper24{box-shadow:0 24px 24px 0 rgba(0,0,0,0.2),0 40px 77px 0 rgba(0,0,0,0.22) !important}
+
+/*	Colors */
+.transparent{color: #fff;background-color: transparent;}
+.tt-amber{color:#ffc107 !important}.amber{color:#000 !important;background-color:#ffc107 !important}
+.tt-aqua{color:#00ffff !important}.aqua{color:#000 !important;background-color:#00ffff !important}
+.tt-blue{color:#2196F3 !important}.blue{color:#fff !important;background-color:#2196F3 !important}
+.tt-light-blue{color:#87CEEB !important}.light-blue{color:#000 !important;background-color:#87CEEB !important}
+.tt-brown{color:#795548 !important}.brown{color:#fff !important;background-color:#795548 !important}
+.tt-cyan{color:#00bcd4 !important}.cyan{color:#000 !important;background-color:#00bcd4 !important}
+.tt-blue-grey{color:#607d8b !important}.blue-grey{color:#fff !important;background-color:#607d8b !important}
+.tt-green{color:#4CAF50 !important}.green{color:#fff !important;background-color:#4CAF50 !important}
+.tt-light-green{color:#8bc34a !important}.light-green{color:#000 !important;background-color:#8bc34a !important}
+.tt-indigo{color:#3f51b5 !important}.indigo{color:#fff !important;background-color:#3f51b5 !important}
+.tt-khaki{color:#b4aa50 !important}.khaki{color:#000 !important;background-color:#f0e68c !important}
+.tt-lime{color:#cddc39 !important}.lime{color:#000 !important;background-color:#cddc39 !important}
+.tt-orange{color:#ff9800 !important}.orange{color:#000 !important;background-color:#ff9800 !important}
+.tt-deep-orange{color:#ff5722 !important}.deep-orange{color:#fff !important;background-color:#ff5722 !important}
+.tt-pink{color:#e91e63 !important}.pink{color:#fff !important;background-color:#e91e63 !important}
+.tt-purple{color:#9c27b0 !important}.purple{color:#fff !important;background-color:#9c27b0 !important}
+.tt-deep-purple{color:#673ab7 !important}.deep-purple{color:#fff !important;background-color:#673ab7 !important}
+.tt-red{color:#f44336 !important}.red{color:#fff !important;background-color:#f44336 !important}
+.tt-sand{color:#fdf5e6 !important}.sand{color:#000 !important;background-color:#fdf5e6 !important}
+.tt-teal{color:#009688 !important}.teal{color:#fff !important;background-color:#009688 !important}
+.tt-yellow{color:#d2be0e !important}.yellow{color:#000 !important;background-color:#ffeb3b !important}
+.tt-white{color:#fff !important}.white{color:#000 !important;background-color:#fff !important}
+.tt-black{color:#000 !important}.black{color:#fff !important;background-color:#000 !important}
+.tt-grey{color:#757575 !important}.grey{color:#000 !important;background-color:#9e9e9e !important}
+.tt-light-grey{color:#f1f1f1 !important}.light-grey{color:#000;background-color:#f1f1f1 !important}
+.tt-dark-grey{color:#3a3a3a !important}.dark-grey{color:white;background-color:#616161 !important}
+.tt-white-opacity{color:rgba(255,255,255,0.65) !important}
+.tt-black-opacity{color:rgba(0,0,0,0.60) !important}
+.tt-shadow{text-shadow:1px 1px 1px #444;letter-spacing:2px}
