@@ -3,7 +3,12 @@
 	li.li,li ul,.dropdown.hover,.dropdown.content{width: 100% !important;float: none;}
 }
 
-.btn,a,span{font-size: 0.85em;}
+@font-face{
+	font-family: swifter;
+	src: url(../contents/fonts/segoescb.ttf);
+}
+
+.btn,a,span,p{font-size: 0.85em;font-family: swifter;}
 
 h1,h2,h3,h4,h5,h6{font-weight: 400;margin: 10px 0 !important;}
 h6{font-size: 12px;}
@@ -43,10 +48,10 @@ li ul,.dropdown.content{
 	min-width: 8.5rem !important;
 	background-color: #fff;
 }
-li li,.dropdown.content *{
+li li a,.dropdown.content *{
 	display: block !important;
 	min-height: 1.5rem !important;
-	padding: 6px 0 6px 0 !important;
+	padding: 12px 0 12px 0 !important;
 }
 li li:hover,.dropdown.content *:hover{
 	border-bottom: 1px outset #fff;
