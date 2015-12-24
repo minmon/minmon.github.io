@@ -85,6 +85,7 @@ label[for="open close fly in"]{
 	display: block;
 	width: 25px;
 	height: 25px;
+	font-size: 25px;
 	cursor: pointer;
 }
 
