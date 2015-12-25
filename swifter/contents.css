@@ -1,6 +1,6 @@
 @media screen and (max-width: 600px)
 {
-	li.li,li ul,.dropdown.hover,.dropdown.content{width: 100% !important;float: none;}
+	li.li,li ul,.dropdown.hover,.dropdown.content,.pretty.select {width: 100% !important;float: none;}
 }
 
 @font-face{
