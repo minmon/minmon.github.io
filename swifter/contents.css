@@ -96,18 +96,21 @@ label[for="open close fly in"]{
 
 .pretty.select{
 	position: relative;
+	margin-top: 2.5px;
+	margin-bottom: 2.5px;
 	min-width: 125px !important;
 }
-.pretty.select > input[id="ps options"]{
+.pretty.select > input[type="checkbox"]{
 	display: none;
 }
-.pretty.select > label[for="ps options"]{
+.pretty.select > label{
+	float: right;
 	padding: 10px;
 	border: 1px solid #000;
 	font-size: 0.6em;
 	cursor: pointer;
 }
-.pretty.select > input[id="ps options"]:checked~.ps.options{
+.pretty.select > input[type="checkbox"]:checked~.ps.options{
 	display: block;
 	transition: 0.5s;
 }
@@ -118,7 +121,7 @@ label[for="open close fly in"]{
 .pretty.select > .ps.options{
 	position: absolute;
 	display: none;
-	width: 100%;
+	min-width: 100%;
 	z-index: 1;
 }
 
