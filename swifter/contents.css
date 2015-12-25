@@ -105,7 +105,7 @@ label[for="open close fly in"]{
 }
 .pretty.select > label{
 	float: right;
-	padding: 10px;
+	padding: 15px;
 	border: 1px solid #000;
 	font-size: 0.6em;
 	cursor: pointer;
@@ -128,7 +128,7 @@ label[for="open close fly in"]{
 .pretty.select > .ps.options.up{bottom: 100%;}
 .pretty.select > .ps.options.down{top: 100%;}
 
-.ps.options *{display: block;padding: 2.5px !important;background: #fff;}
+.ps.options *{display: block;padding: 3px !important;background: #fff;}
 .ps.options *:hover{background: #ccc;border-bottom: 1px solid #ccc;cursor: pointer;}
 
 /*	Sticky footer */
